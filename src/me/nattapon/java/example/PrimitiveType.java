@@ -1,11 +1,12 @@
-package me.nattapon.java;
+package me.nattapon.java.example;
 
 public class PrimitiveType {
     public static void main(String[] args) {
+        // Java has 8 primitive type
         byte b = 0;
         short s = 1;
         int i = 2;
-        long l = 3;
+        long l = 3L;
         float f = 4;
         double d = 5;
         char c = 'c';
