@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ForEachExample {
     public static void main(String[] args) {
-        List<String> gamesList = new ArrayList<String>();
+        List<String> gamesList = new ArrayList<>();
         gamesList.add("Football");
         gamesList.add("Cricket");
         gamesList.add("Chess");
