@@ -8,12 +8,13 @@ public class InetDemo {
             InetAddress localIp = InetAddress.getLocalHost();
             System.out.println("Your current Hostname : " + localIp.getHostName());
             System.out.println("Your current IP address : " + localIp.getHostAddress());
+            System.out.println("IP Loopback Address: " + InetAddress.getLoopbackAddress().getHostAddress());
 
             InetAddress ip = InetAddress.getByName("nattapon.me");
             System.out.println("\nHost Name: " + ip.getHostName());
             System.out.println("IP Address: " + ip.getHostAddress());
         } catch (Exception e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 }
