@@ -16,5 +16,7 @@ public class DateType {
         millis = System.currentTimeMillis();
         java.sql.Date sqlDate = new java.sql.Date(millis);
         System.out.println(sqlDate);
+
+        System.out.println(java.time.OffsetDateTime.now());
     }
 }
