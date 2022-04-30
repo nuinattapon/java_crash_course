@@ -11,13 +11,13 @@ public class Chapter2Video8 {
                 (func) -> (x, y) -> {
                     if (y == 0f) {
                         System.out.println("Error: second argument is zero!");
-                        return 0f;
+                        return Float.MAX_VALUE;
                     }
                     return func.apply(x, y);
                 };
 
         BiFunction<Float, Float, Float> divideSafe = secondArgIsntZeroCheck.apply(divide);
 
-        System.out.println(divideSafe.apply(10f, 2f));
+        System.out.println(divideSafe.apply(10f, 0f));
     }
 }

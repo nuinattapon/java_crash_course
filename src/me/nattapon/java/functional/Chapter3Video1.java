@@ -9,16 +9,17 @@ import java.util.stream.Collectors;
 public class Chapter3Video1 {
 
     public static void main(String[] args) {
-        Integer[] intArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        Integer[] intArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         List<Integer> listOfIntegers = new ArrayList<>(Arrays.asList(intArray));
+        listOfIntegers.add(11);
 
-        Function<Integer, Integer> timesTwo = (x) -> x * 2;
+        Function<Integer, Double> timesTwo = (x) -> x * 2.0;
 
-        List<Integer> doubled = listOfIntegers
+        List<Double> doubled = listOfIntegers
                 .stream()
                 .map(timesTwo)
                 .collect(Collectors.toList());
-
+        doubled.add(timesTwo.apply(12));
         System.out.println(doubled);
     }
 }

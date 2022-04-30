@@ -23,7 +23,7 @@ public class SetDemo {
         s.forEach(System.out::println);
         System.out.println();
 
-        List<Fruit> fruitArrayList = new ArrayList<>(s.stream().toList());
+        List<Fruit> fruitArrayList = new ArrayList<>(s);
         System.out.println("Fruits in ArrayList sorted by price descending");
         fruitArrayList.sort(Fruit.PRICE_COMPARATOR.reversed());
         fruitArrayList.forEach(System.out::println);
