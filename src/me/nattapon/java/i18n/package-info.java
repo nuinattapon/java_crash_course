@@ -1,0 +1,1 @@
+package me.nattapon.java.i18n;

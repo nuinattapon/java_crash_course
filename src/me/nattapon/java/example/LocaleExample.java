@@ -14,6 +14,5 @@ public class LocaleExample {
         System.out.println(locale.getISO3Language());
         System.out.println(locale.getLanguage());
         System.out.println(locale.getCountry());
-
     }
 }

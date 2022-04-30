@@ -14,7 +14,7 @@ public class OptionalDemo {
                 .orElseGet(
                     ()-> {
                         // Extra computational to retrieve the value
-                        return "World";
+                        return "WORLD";
                     });
 
         System.out.println("orElse = " + orElse);

@@ -13,10 +13,9 @@ public class Swing1 {
      
      ImageIcon image = new ImageIcon("oracle.ico");
      frame.setResizable(false);
-    //  frame.setIconImage(image.getImage());
      frame.setSize(420,420);
-     frame.getContentPane().setBackground(new Color(0x497443));
-     
+     frame.getContentPane().setBackground(new Color(0x00710D));
+     frame.setIconImage(image.getImage());
      frame.setVisible(true);
     }   
 }

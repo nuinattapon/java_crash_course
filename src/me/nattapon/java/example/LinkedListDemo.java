@@ -2,12 +2,13 @@ package me.nattapon.java.example;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 // https://www.javatpoint.com/collections-in-java
 
 public class LinkedListDemo {
     public static void main(String[] args) {
-        LinkedList<String> al = new LinkedList<String>();
+        List<String> al = new LinkedList<String>();
         al.add("Ravi");
         al.add("Vijay");
         al.add("Ravi");
