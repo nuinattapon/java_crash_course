@@ -26,6 +26,9 @@ public class HashMapDemo {
         map.entrySet().forEach((m)-> {
             System.out.println(m.getKey() + " " + m.getValue());
         });
+        System.out.println();
+        System.out.println("Using forEach() with Hashmap...");
+        map.forEach((key, value) -> System.out.println(key + " " + value));
 
         System.out.println();
         System.out.printf("Key %2d : Value %s\n", 5, map.get(5));

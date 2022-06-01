@@ -20,6 +20,10 @@ public class Chapter4Video3 {
     }
 
     public static void main(String[] args) {
+        System.out.println("Counting up:");
         countUp(0, 10);
+        System.out.println("\nCounting down:");
+        countDown( 10);
+
     }
 }

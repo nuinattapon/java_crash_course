@@ -36,6 +36,14 @@ public class Chapter3Video7 {
 
         System.out.println(value);
 
+        Map<String, List<Employee>> employeesByJobTitle = employees
+                .stream()
+                .collect(Collectors.groupingBy(
+                        (employee) -> employee.jobTitle
+                ))        ;
+
+        System.out.println(employeesByJobTitle);
+
         Map<String, Float> averageSalariesMap = employees
                 .stream()
                 .collect(Collectors.groupingBy(
@@ -60,6 +68,16 @@ public class Chapter3Video7 {
         public final Integer age;
         public final String jobTitle;
         public final Float salary;
+
+        @Override
+        public String toString() {
+            return "Employee{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    ", jobTitle='" + jobTitle + '\'' +
+                    ", salary=" + salary +
+                    '}';
+        }
 
         public Employee(String name, Integer age, String jobTitle, Float salary) {
             this.name = name;

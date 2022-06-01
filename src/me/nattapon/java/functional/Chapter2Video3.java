@@ -1,4 +1,5 @@
 package me.nattapon.java.functional;
+
 import java.util.function.BiFunction;
 
 public class Chapter2Video3 {
